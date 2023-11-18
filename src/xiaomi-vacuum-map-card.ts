@@ -279,10 +279,10 @@ export class XiaomiVacuumMapCard extends LitElement {
             <div
                 id="map-zoomer-content"
                 style="
-                 margin-top: ${(preset.map_source.crop?.top ?? 0) * -1}px;
-                 margin-bottom: ${(preset.map_source.crop?.bottom ?? 0) * -1}px;
-                 margin-left: ${(preset.map_source.crop?.left ?? 0) * -1}px;
-                 margin-right: ${(preset.map_source.crop?.right ?? 0) * -1}px;">
+                 margin-top: -40pxpx;
+                 margin-bottom: -50px;
+                 margin-left: -30px;
+                 margin-right: 0px;">
                 <img
                     id="map-image"
                     alt="camera_image"
@@ -1614,6 +1614,10 @@ export class XiaomiVacuumMapCard extends LitElement {
                 transform: translate(var(--x), var(--y)) scale(var(--scale));
                 transform-origin: 0 0;
                 position: relative;
+                margin-top: -40px;
+                margin-bottom: -50px;
+                margin-left: -30px;
+                margin-right: 0px;">
             }
 
             #map-image {
